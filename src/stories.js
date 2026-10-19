@@ -39,14 +39,14 @@ export const stories = [
     translation: 'Translated from the French original. The original is available above the text.',
     editing:
       'Excerpt from a 4′27″ voice recording made on 30 June 2025, in which the teller travels back to 15 July 2019. Light edit for readability.',
-    cover: '/stories/resilience/photo.jpg',
+    cover: '/stories/resilience/photo1.jpg',
     coverAlt:
       'Blurred photograph of a person seen from behind, one arm stretched toward a plate on a table, in soft blue-gray light.',
     intro: 'Voyage into the past: 15 July 2019.',
     blocks: [
       {
         type: 'image',
-        src: '/stories/resilience/photo.jpg',
+        src: '/stories/resilience/photo1.jpg',
         alt: 'Blurred photograph of a person seen from behind, one arm stretched toward a plate on a table, in soft blue-gray light.',
       },
       {
@@ -84,14 +84,14 @@ Aujourd’hui encore, chaque fois que je me sens petite ou impuissante, je repen
     translation: 'Translated from the French original. The original is available above the text.',
     editing:
       'Excerpt from a 3′53″ voice recording made on 3 July 2025, in which the teller travels back to 11 October 2018. Light edit for readability.',
-    cover: '/stories/to-survive/photo.jpg',
+    cover: '/stories/to-survive/photo2.jpg',
     coverAlt:
       'Blurred photograph of a person with glasses and a white t-shirt moving through a kitchen, one hand raised to their chin.',
     intro: 'Voyage into the past: 11 October 2018.',
     blocks: [
       {
         type: 'image',
-        src: '/stories/to-survive/photo.jpg',
+        src: '/stories/to-survive/photo2.jpg',
         alt: 'Blurred photograph of a person with glasses and a white t-shirt moving through a kitchen, one hand raised to their chin.',
       },
       {
