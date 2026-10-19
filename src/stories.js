@@ -1,7 +1,7 @@
 // ADD A STORY: copy one block below, edit it, and put it at the top of the list.
 // The gallery tile, the story page, the care note and the withdraw link are all built from it.
 //
-// Files go in /public/stories/<slug>/ and are referenced as '/stories/<slug>/file.JPG'.
+// Files go in /public/stories/<slug>/ and are referenced as '/stories/<slug>/file.jpg'.
 // Photographs are always shown whole. Never cropped.
 //
 // Story fields:
@@ -10,13 +10,14 @@
 //   reviewed: when the person last confirmed consent (e.g. 'March 2026')
 //   translation: optional, e.g. 'Translated from Portuguese and checked by R.'
 //   editing: optional, overrides the default editing note
-//   cover: optional '/stories/slug/cover.JPG' (shown whole), coverAlt: its description
+//   cover: optional '/stories/slug/cover.jpg' (shown whole), coverAlt: its description
 //   ratio: placeholder shape when there is no cover, e.g. '4/5', '3/2', '1'
 //   intro: one or two lines
 //   blocks: any mix, in any order:
 //     { type: 'text',  body: 'Paragraph one.\n\nParagraph two.' }
-//       (add original: 'Original text', lang: 'fr' to give visitors an English / Original toggle)
-//     { type: 'image', src: '/stories/slug/photo.JPG', alt: 'Describe it', caption: 'Optional' }
+//       (add original: 'Original text', lang: 'fr' to give visitors an English / Original toggle;
+//        add lines: true to keep every line break, for spoken or poem-like texts)
+//     { type: 'image', src: '/stories/slug/photo.jpg', alt: 'Describe it', caption: 'Optional' }
 //     { type: 'audio', src: '/stories/slug/voice.mp3',
 //       transcript: { en: 'English text', original: 'Original text', lang: 'es' } }
 //       (transcript can also be a plain string)
@@ -69,6 +70,61 @@ Quand je lui ai expliqué, j’ai vu son regard changer. Ses yeux se sont rempli
 Il me disait souvent : « Avant d’être originaire de tel ou tel pays, tu es un être humain. Tu comptes autant que n’importe qui d’autre. » Il a même convaincu mes autres professeurs d’écrire des lettres en ma faveur, pour rester dans le pays, pour essayer de faire changer la décision du Ministère et m’accorder les papiers de séjour. Il m’a montrée comment contacter des associations de défense des droits humains, les ministères, le gouvernement. Et il me répétait : « Quand tu vas revendiquer tes droits, vas-y la tête haute. Et s’ils essaient de t’intimider, réponds-leur, ne te laisse jamais réduire au silence. »
 
 Aujourd’hui encore, chaque fois que je me sens petite ou impuissante, je repense à ce moment. À ses mots. Ils me rappellent que même dans les situations les plus difficiles, il y a toujours des gens prêts à te voir, à te soutenir, et à te rappeler que tu as ta place.`,
+      },
+    ],
+  },
+  {
+    slug: 'to-survive',
+    code: 'OH-2025-02',
+    title: 'To survive',
+    teller: 'B.J.',
+    year: 2025,
+    told: 'Initials only',
+    reviewed: '[date to confirm]',
+    translation: 'Translated from the French original. The original is available above the text.',
+    editing:
+      'Excerpt from a 3′53″ voice recording made on 3 July 2025, in which the teller travels back to 11 October 2018. Light edit for readability.',
+    ratio: '4/5',
+    intro: 'Voyage into the past: 11 October 2018.',
+    blocks: [
+      {
+        type: 'text',
+        lang: 'fr',
+        lines: true,
+        body: `I get up before the sun. I pull on my boots. Off to the building site. It’s all I know how to do: work, provide for myself and my little family.
+Sometimes I even work weekends.
+And yet… there’s this weight I can’t shake off.
+My little boy… he’s seven years old. Seven.
+Every day I watch him grow, and I feel… I feel like I’m missing it.
+I miss him.
+I build houses for other people, but am I… am I building memories with him?
+I wonder… when I finally slow down, will he already be grown?
+Will I have lost everything?
+I work for him. For his future. To give him what I never had.
+But some days I ask myself: am I doing things right?
+In trying to give him everything… am I losing what matters most? The little things that count?
+I hope… I hope that one day he’ll understand.
+That every exhausting morning, every aching muscle, every hour of absence… was for him.
+Even if I feel that this time can never be recovered.
+This is what it costs.
+This is what it means to survive.`,
+        original: `Je me lève avant le soleil. J'enfile mes bottes. Direction le chantier. C'est tout ce que je sais faire : travailler, subvenir à mes besoins et ceux de ma petite famille.
+Parfois, je travaille même le week-end.
+Et pourtant… il y a ce poids dont je n'arrive pas à me débarrasser.
+Mon petit garçon… il a sept ans. Sept ans.
+Chaque jour, je le regarde grandir, et j'ai l'impression… j'ai l'impression que ça me manque.
+Il me manque.
+Je construis des maisons pour d'autres, mais est-ce que je… est-ce que je construis des souvenirs avec lui ?
+Je me demande… quand je ralentirai enfin, sera-t-il déjà grand ?
+Aurai-je tout perdu ?
+Je travaille pour lui. Pour son avenir. Pour lui donner ce que je n'ai jamais eu.
+Mais certains jours, je me demande : est-ce que je fais bien les choses ?
+En essayant de tout lui donner… est-ce que je perds l'essentiel ? Les petites choses qui comptent ?
+J'espère… j'espère qu'un jour il comprendra.
+Que chaque matinée épuisante, chaque muscle douloureux, chaque heure d'absence… c'était pour lui.
+Même si j'ai l'impression que ce temps est irrécupérable.
+C'est ce que ça coûte.
+C'est ce que ça signifie de survivre.`,
       },
     ],
   },
