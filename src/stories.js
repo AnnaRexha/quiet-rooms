@@ -10,13 +10,13 @@
 //   reviewed: when the person last confirmed consent (e.g. 'March 2026')
 //   translation: optional, e.g. 'Translated from Portuguese and checked by R.'
 //   editing: optional, overrides the default editing note
-//   cover: optional '/stories/slug/cover.jpg' (shown whole), coverAlt: its description
+//   cover: optional '/stories/slug/cover.JPG' (shown whole), coverAlt: its description
 //   ratio: placeholder shape when there is no cover, e.g. '4/5', '3/2', '1'
 //   intro: one or two lines
 //   blocks: any mix, in any order:
 //     { type: 'text',  body: 'Paragraph one.\n\nParagraph two.' }
 //       (add original: 'Original text', lang: 'fr' to give visitors an English / Original toggle)
-//     { type: 'image', src: '/stories/slug/photo.jpg', alt: 'Describe it', caption: 'Optional' }
+//     { type: 'image', src: '/stories/slug/photo.JPG', alt: 'Describe it', caption: 'Optional' }
 //     { type: 'audio', src: '/stories/slug/voice.mp3',
 //       transcript: { en: 'English text', original: 'Original text', lang: 'es' } }
 //       (transcript can also be a plain string)
