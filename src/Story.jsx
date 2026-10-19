@@ -44,9 +44,24 @@ function Transcript({ t }) {
   )
 }
 
+function TextTabs({ b }) {
+  const [tab, setTab] = useState('en')
+  const paras = (s) => s.split('\n\n').map((p, i) => <p key={i}>{p}</p>)
+  return (
+    <div className="prose nar">
+      <div className="tabs">
+        <button aria-pressed={tab === 'en'} onClick={() => setTab('en')}>English</button>
+        <button aria-pressed={tab === 'o'} onClick={() => setTab('o')}>Original</button>
+      </div>
+      <div lang={tab === 'o' ? b.lang : undefined}>{paras(tab === 'o' ? b.original : b.body)}</div>
+    </div>
+  )
+}
+
 function Block({ b }) {
   switch (b.type) {
     case 'text':
+      if (b.original) return <TextTabs b={b} />
       return <div className="prose nar">{b.body.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}</div>
     case 'image':
       return (
