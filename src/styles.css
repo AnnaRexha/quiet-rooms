@@ -67,6 +67,7 @@ img { display: block; max-width: 100%; }
 .head h1 { margin: 0; font: italic 300 clamp(2.6rem, 7vw, 5.5rem) / 1.02 var(--serif); letter-spacing: -0.02em; }
 .meta { margin: 1.25rem 0 0; color: var(--muted); }
 .lede { margin: 2rem 0 0; font: 300 1.35rem / 1.55 var(--serif); }
+.prose p.lines { white-space: pre-line; }
 .prose p { margin: 0 0 1.4em; font: 300 1.2rem / 1.85 var(--serif); }
 
 .photo { margin: 3.5rem 0; width: min(100%, 700px); }
