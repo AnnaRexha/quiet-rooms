@@ -1,7 +1,7 @@
 // ADD A STORY: copy one block below, edit it, and put it at the top of the list.
 // The gallery tile, the story page, the care note and the withdraw link are all built from it.
 //
-// Files go in /public/stories/<slug>/ and are referenced as '/stories/<slug>/file.jpg'.
+// Files go in /public/stories/<slug>/ and are referenced as '/stories/<slug>/file.JPG'.
 // Photographs are always shown whole. Never cropped.
 //
 // Story fields:
