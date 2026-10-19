@@ -84,9 +84,16 @@ Aujourd’hui encore, chaque fois que je me sens petite ou impuissante, je repen
     translation: 'Translated from the French original. The original is available above the text.',
     editing:
       'Excerpt from a 3′53″ voice recording made on 3 July 2025, in which the teller travels back to 11 October 2018. Light edit for readability.',
-    ratio: '4/5',
+    cover: '/stories/to-survive/photo.jpg',
+    coverAlt:
+      'Blurred photograph of a person with glasses and a white t-shirt moving through a kitchen, one hand raised to their chin.',
     intro: 'Voyage into the past: 11 October 2018.',
     blocks: [
+      {
+        type: 'image',
+        src: '/stories/to-survive/photo.jpg',
+        alt: 'Blurred photograph of a person with glasses and a white t-shirt moving through a kitchen, one hand raised to their chin.',
+      },
       {
         type: 'text',
         lang: 'fr',
