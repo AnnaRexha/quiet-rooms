@@ -10,7 +10,7 @@ export default function About() {
         {site.about.map((p, i) => <p key={i}>{p}</p>)}
       </div>
       <div className="nar">
-        <h2 className="sub">How I hold these stories</h2>
+        <h2 className="sub">How these stories are held</h2>
         <ul className="rules">
           {site.rules.map((r, i) => <li key={i}>{r}</li>)}
         </ul>
