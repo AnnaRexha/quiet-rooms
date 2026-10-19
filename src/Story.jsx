@@ -46,7 +46,7 @@ function Transcript({ t }) {
 
 function TextTabs({ b }) {
   const [tab, setTab] = useState('en')
-  const paras = (s) => s.split('\n\n').map((p, i) => <p key={i}>{p}</p>)
+  const paras = (s) => s.split('\n\n').map((p, i) => <p key={i} className={b.lines ? 'lines' : undefined}>{p}</p>)
   return (
     <div className="prose nar">
       <div className="tabs">
@@ -62,7 +62,7 @@ function Block({ b }) {
   switch (b.type) {
     case 'text':
       if (b.original) return <TextTabs b={b} />
-      return <div className="prose nar">{b.body.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}</div>
+      return <div className="prose nar">{b.body.split('\n\n').map((p, i) => <p key={i} className={b.lines ? 'lines' : undefined}>{p}</p>)}</div>
     case 'image':
       return (
         <figure className="photo">
